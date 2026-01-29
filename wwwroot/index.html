@@ -1,38 +1,47 @@
 <!DOCTYPE html>
-
-<html lang="en">    
-
+<html lang="sv">    
 <head>        
     <meta charset="UTF-8">        
     <meta name="viewport" content="width=device-width, initial-scale=1.0">        
     <title>Weather Homepage</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🌤️</text></svg>">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>        
     <header>            
-        <h1>SuvNetMHI</h1>        
+        <h1>SuvNetMHI</h1>
+        <p>Suvnets Metereologiska och Hydrologiska Institut</p>
+        <div id="headerCatImage"></div>
+        <p id="weatherQuote"></p>     
     </header>        
     <main>            
-        <section>                
+        <!-- <section class="intro-section">                
             <h2>VÄDRET</h2>                
-            <p>Vill du veta vad det ska bli för väder? Skriv namnet i rutan nedan och sök!</p>  
-            <p id="weatherQuote"></p>          
-        </section>
-        <section>
+            <p>Vill du veta vad det ska bli för väder? Skriv namnet i rutan nedan och sök!</p>            
+        </section> -->
+        
+        <section class="search-section">
             <h2>SÖK VÄDER</h2>                
             <input type="text" id="cityInput" placeholder="Ange stad...">                
             <button id="searchButton">Sök</button>
+            <div id="warningResult"></div>
             <div id="weatherResult"></div>
+        </section>
+
+        <section class="cat-section">
             <div id="catImage"></div>
-        </section>            
-        <section>                
-            <h2>Här ett meddelande från vår sponsor!</h2>                
+        </section>
+            
+        <section class="ad-section">                
+            <h2>Här lite reklam för något du säkert inte behöver:</h2>                
             <div id="sponsorAd"></div>            
         </section>        
     </main>        
+    
     <footer>            
         <p>&copy; 2026 Suvnets Metereologiska och Hydrologiska Institut.</p>        
     </footer>
 
+    <script src="js/app.js"></script>
+</body>
 </html>
