@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistik - Weather Homepage</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>📊</text></svg>">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/stats.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>SuvNetMHI - Statistik</h1>
+        <p>Sökstatistik och populära orter</p>
+        <nav>
+            <a href="index.html" class="nav-link">← Tillbaka till väderprognosen</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="stats-section">
+            <h2>Populäraste städer</h2>
+            <div id="popularCities">
+                <p>Laddar statistik...</p>
+            </div>
+        </section>
+        
+        <section class="stats-section">
+            <h2>Sökningar över tid</h2>
+            <div class="chart-container">
+                <canvas id="searchesChart"></canvas>
+            </div>
+        </section>
+        
+        <section class="stats-section">
+            <h2>Top 10 städer</h2>
+            <div class="chart-container">
+                <canvas id="topCitiesChart"></canvas>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2026 Suvnets Metereologiska och Hydrologiska Institut.</p>
+    </footer>
+    
+    <script src="js/stats.js"></script>
+</body>
+</html>

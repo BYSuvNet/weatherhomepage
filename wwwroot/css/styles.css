@@ -39,6 +39,25 @@ header p {
     box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
+header nav {
+    margin-top: 1rem;
+}
+
+header .nav-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-size: 0.9rem;
+}
+
+header .nav-link:hover {
+    background-color: #2980b9;
+}
+
 main {
     max-width: 1200px;
     margin: 2rem auto;

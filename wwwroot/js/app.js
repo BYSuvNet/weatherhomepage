@@ -1,11 +1,11 @@
 // API Base URLs - Konfigurera dessa baserat på dina API-portar
 const API_CONFIG = {
-    weatherApi: 'http://localhost:5266',
-    catApi: 'http://localhost:5219',
+    weatherApi: 'http://10.27.1.180:5266',
+    catApi: 'http://10.27.3.180:5219',
     quoteApi: 'http://localhost:5212',
-    statisticsApi: 'http://localhost:5080',
-    adsApi: 'http://localhost:5112',
-    warningsApi: 'http://localhost:5000',
+    statisticsApi: 'http://10.27.0.204:5159',
+    adsApi: 'http://10.27.1.14:5112',
+    warningsApi: 'http://10.27.6.112:5000',
     spaceApi: 'http://localhost:5136'
 };
 
@@ -59,7 +59,7 @@ async function handleSearch() {
         displayWeather(weatherData);
         
         // Load warnings
-        loadWarnings(city, weatherData.date);
+        //loadWarnings(city, weatherData.date);
         
         // Load ad based on location
         if (weatherData.longitude && weatherData.latitude) {

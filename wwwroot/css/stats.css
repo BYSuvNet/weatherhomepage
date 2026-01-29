@@ -1,0 +1,127 @@
+.nav-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #2980b9;
+}
+
+.stats-section {
+    margin-bottom: 2rem;
+}
+
+.chart-container {
+    position: relative;
+    height: 400px;
+    margin-top: 1rem;
+}
+
+.city-bar-chart {
+    margin-top: 1rem;
+}
+
+.city-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    padding: 0.5rem;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    transition: transform 0.2s;
+}
+
+.city-bar:hover {
+    transform: translateX(5px);
+    background-color: #e9ecef;
+}
+
+.city-rank {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #3498db;
+    min-width: 40px;
+}
+
+.city-name {
+    font-weight: 500;
+    min-width: 150px;
+    flex-shrink: 0;
+}
+
+.city-bar-visual {
+    flex-grow: 1;
+    height: 30px;
+    background: linear-gradient(90deg, #3498db, #2980b9);
+    border-radius: 4px;
+    margin: 0 1rem;
+    position: relative;
+    transition: width 0.5s ease;
+}
+
+.city-count {
+    font-weight: bold;
+    color: #2c3e50;
+    min-width: 60px;
+    text-align: right;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    color: white;
+}
+
+.stat-card .stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.stat-card:nth-child(2) {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.stat-card:nth-child(3) {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.stat-card:nth-child(4) {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.loading-spinner {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+}
+
+.error-stats {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 1rem;
+    border-radius: 4px;
+    border-left: 4px solid #dc3545;
+}
